@@ -21,10 +21,25 @@ saque sem violar essa regra.
 #include <stdio.h>
 
 int main() {
-  int estoque200 = 3, estoque100 = 3, estoque50 = 3, estoque20 = 3, estoque10 = 3, estoque5 = 3;
-  int notasRetidadas200 = 0, notasRetidadas100 = 0, notasRetidadas50 = 0, notasRetidadas20 = 0, notasRetidadas10 = 0, notasRetidadas5 = 0;
+  int 
+    estoque200, 
+    estoque100, 
+    estoque50, 
+    estoque20, 
+    estoque10, 
+    estoque5;
+
+  int 
+    notasRetidadas200 = 0,
+    notasRetidadas100 = 0, 
+    notasRetidadas50 = 0, 
+    notasRetidadas20 = 0, 
+    notasRetidadas10 = 0, 
+    notasRetidadas5 = 0;
+
   int valorSaque;
   int valorRestante;
+  
   #define CEDULA_200 200
   #define CEDULA_100 100
   #define CEDULA_50 50
@@ -32,18 +47,18 @@ int main() {
   #define CEDULA_10 10
   #define CEDULA_5 5
 
-  // printf("Quantidade de notas de R$ 200: ");
-  // scanf("%d", &estoque200);
-  // printf("Quantidade de notas de R$ 100: ");
-  // scanf("%d", &estoque100);
-  // printf("Quantidade de notas de R$ 50: ");
-  // scanf("%d", &estoque50);
-  // printf("Quantidade de notas de R$ 20: ");
-  // scanf("%d", &estoque20);
-  // printf("Quantidade de notas de R$ 10: ");
-  // scanf("%d", &estoque10);
-  // printf("Quantidade de notas de R$ 5: ");
-  // scanf("%d", &estoque5);
+  printf("Quantidade de notas de R$ 200: ");
+  scanf("%d", &estoque200);
+  printf("Quantidade de notas de R$ 100: ");
+  scanf("%d", &estoque100);
+  printf("Quantidade de notas de R$ 50: ");
+  scanf("%d", &estoque50);
+  printf("Quantidade de notas de R$ 20: ");
+  scanf("%d", &estoque20);
+  printf("Quantidade de notas de R$ 10: ");
+  scanf("%d", &estoque10);
+  printf("Quantidade de notas de R$ 5: ");
+  scanf("%d", &estoque5);
 
   printf("Digite o valor de saque: ");
   scanf("%d", &valorSaque);
