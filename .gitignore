@@ -1,0 +1,22 @@
+# Executáveis
+*.exe
+*.out
+
+# Arquivos de compilação
+*.o
+*.obj
+
+# Executáveis sem extensão (Linux/macOS)
+a.out
+
+# Diretórios de build
+build/
+bin/
+
+# Arquivos temporários
+*.tmp
+*.log
+
+# Arquivos de configuração de IDE/editor
+.vscode/
+.idea/
