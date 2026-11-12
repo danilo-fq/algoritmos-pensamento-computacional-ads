@@ -1,0 +1,2 @@
+/*Funções*/
+#include "meuBanco.h"
