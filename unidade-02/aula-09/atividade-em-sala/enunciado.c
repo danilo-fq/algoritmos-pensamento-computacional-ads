@@ -1,11 +1,11 @@
 /*
   EXERCICIO EM SALA 11/11/2026
   Construa um algoritmo que simula uma carteira digital. 
-  A carteira contém os seguintes campos:
+  A carteira contém os seguintes campos obrigatórios:
     - cliente; (array de char)
     - saldo; (float)
-    - tipo { 01 - corrente, 02 - salario, 03 - poupança }; array de inteiros (possiveis, 01 e 03, 02 e 03)
-    - *historico; (as ultimas 5 transações) valor, tipo (deposito, saque, emprestimo)
+    - tipo { c - corrente, s - salario, p - poupança }; array de inteiros (possiveis: corrente e poupança, salario e poupança, ou somente uma das opções)
+    - *historico; (as ultimas 5 transações) [valor, tipo] (deposito, saque, emprestimo)
     - numero;
   O banco pode ter 'n' clientes. O cliente pode solicitar emprestimo caso tenha saldo na poupança e sua conta seja corrente, limitando-se a apenas um empréstimo. O limite de emprestimo equivale a 25% de 10 vezes o saldo da poupança + conta.
 
