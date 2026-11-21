@@ -1,6 +1,10 @@
 # Executáveis
 *.exe
 *.out
+banco
+main
+tempCodeRunnerFile
+tempCodeRunnerFile.h
 
 # Arquivos de compilação
 *.o

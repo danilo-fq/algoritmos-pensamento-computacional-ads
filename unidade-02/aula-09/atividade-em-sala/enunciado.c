@@ -16,4 +16,7 @@
     - Clientes com saldo entre 1000 e 1500 na conta salário
   
   OBS: o algoritmo só deve finalizar quando o usuário digitar 's'
+
+  VER SOBRE INT* TIME()
+  SYTEM("CLS")
 */

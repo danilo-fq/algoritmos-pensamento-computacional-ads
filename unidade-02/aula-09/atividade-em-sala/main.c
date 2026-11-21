@@ -4,61 +4,56 @@
 
 Cliente clientesTeste[] =
   {
-    {
-      "Ana Souza",
+    {"Ana Souza",
       1001,
       0,
       2,
       {
-        { CONTA_CORRENTE, 500.00f },
-        { CONTA_POUPANCA, 1000.00f }
+        {CONTA_CORRENTE, 500.00f},
+        {CONTA_POUPANCA, 1000.00f}
       },
       {
-        { 200.00f, 'D' },
-        { 50.00f,  'S' },
-        { 300.00f, 'D' },
-        { 0.0f,    '\0' },
-        { 0.0f,    '\0' }
+        {'D', 200.00f},
+        {'S', 50.00f},
+        {'D', 300.00f},
+        {'\0', 0.0f},
+        {'\0', 0.0f}
       }
     },
-  
+
     {
       "Bruno Lima",
       1002,
       0,
       1,
+      {{CONTA_CORRENTE, -200.00f}},
       {
-        { CONTA_CORRENTE, -200.00f }
-      },
-      {
-        { 500.00f, 'D' },
-        { 700.00f, 'S' },
-        { 100.00f, 'D' },
-        { 50.00f,  'S' },
-        { 80.00f,  'D' }
+        {'D', 500.00f},
+        {'S', 700.00f},
+        {'D', 100.00f},
+        {'S', 50.00f},
+        {'D', 80.00f}
       }
     },
-  
+
     {
       "Carla Mendes",
       1003,
       0,
       1,
+      {{CONTA_SALARIO, 1000.00f}},
       {
-        { CONTA_SALARIO, 1000.00f }
-      },
-      {
-        { 1000.00f, 'D' },
-        { 200.00f,  'S' },
-        { 300.00f, 'D' },
-        { 100.00f, 'S' },
-        { 50.00f,  'D' }
+        {'D', 1000.00f},
+        {'S', 200.00f},
+        {'D', 300.00f},
+        {'S', 100.00f},
+        {'D', 50.00f}
       }
     }
   };
-  
-  int qtdClientesTeste =
-      sizeof(clientesTeste) / sizeof(clientesTeste[0]);
+
+int qtdClientesTeste =
+    sizeof(clientesTeste) / sizeof(clientesTeste[0]);
 
 int main()
 {

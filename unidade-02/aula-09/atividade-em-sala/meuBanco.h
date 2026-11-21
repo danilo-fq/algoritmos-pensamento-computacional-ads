@@ -10,12 +10,12 @@ typedef enum {
 
 typedef enum {
   CONTA_CORRENTE = 1,
-  CONTA_POUPANCA,
   CONTA_SALARIO,
+  CONTA_POUPANCA,
 } TipoConta;
 typedef struct {
-  float valor;
   char tipoTransacao;
+  float valor;
 } Transacao;
 
 typedef struct {
@@ -56,12 +56,12 @@ int atualizarRelatorios(
   int *qtdClientesContaSalarioFaixaSaldo
 );
 
-void fecharArquivo(FILE *arquivo);
-FILE *abrirArquivo(char *caminho, char *modo);
-void lerArquivo(char *caminho);
-FILE *escreverArquivo(char *caminho, char *texto);
+// void fecharArquivo(FILE *arquivo);
+// FILE *abrirArquivo(char *caminho, char *modo);
+// void lerArquivo(char *caminho);
+// FILE *escreverArquivo(char *caminho, char *texto);
 
-    int validarTiposConta(Cliente cliente);
+int validarTiposConta(Cliente cliente);
 int validarTipoConta(TipoConta tipo);
 int podeFazerEmprestimo(Cliente cliente);
 int calculaQtdClientesCondicao(Cliente *listaClientes, int qtdClientes, TipoCondicao condicao);
